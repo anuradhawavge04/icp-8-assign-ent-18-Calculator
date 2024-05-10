@@ -20,22 +20,52 @@
         }
         .screen{
             height: 30px;
-            width: 280px;
+            width: 350px;
             margin-top: 25px;
-            margin-right: 50px;
-            margin-left: 50px;
+            margin-right: 40px;
+            margin-left: 15px;
             padding: 10px;
             text-align: right;
             color: white;
             background-color: black;
-            border: none;
+            border: solid white 1px;
             border-radius: 5px;
             font-size: 35px;
+            margin-bottom: 40px;
         }
         .screen:hover{
             box-shadow: 5px 5px 10px white;
             transition: 2s;
         }
+        .btn-container{
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn{
+            width: 60px;
+            text-align: center;
+            padding: 10px 0px;
+            font-size: 20px;
+            margin: 5px;
+            border-radius: 50%;
+            border: none;
+        }
+        .btn:hover{
+        box-shadow: 0px 0px 27px white;
+        transition: 2s;
+        }
+      .btn-size{
+        height: 100px;
+        border-radius: 10px;
+        background-color: #ff8000;
+        color: white;
+      }
+       
+     
     
     </style>
 </head>
@@ -44,28 +74,28 @@
 <div class="calculator-body">
     <input type="text" value="0" class="screen">
     <div class="btn-container">
-        <button class="btn">AC</button>
+        <button class="btn btn-color">AC</button>
         <button class="btn">7</button>
         <button class="btn">4</button>
         <button class="btn">1</button>
-        <button class="btn">0</button>
+        <button class="btn ">0</button>
 
         <button class="btn">DEL</button>
         <button class="btn">8</button>
         <button class="btn">5</button>
         <button class="btn">2</button>
 
-        <button class="btn">%</button>
+        <button class="btn ">%</button>
         <button class="btn">9</button>
         <button class="btn">6</button>
         <button class="btn">3</button>
         <button class="btn">.</button>
 
-        <button class="btn">/</button>
-        <button class="btn">X</button>
-        <button class="btn">-</button>
-        <button class="btn">+</button>
-        <button class="btn">=</button>
+        <button class="btn ">/</button>
+        <button class="btn ">X</button>
+        <button class="btn ">-</button>
+        <button class="btn ">+</button>
+        <button class="btn btn-size">=</button>
     </div>
 
 </div>
